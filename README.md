@@ -93,3 +93,12 @@ WARNING: This is a development server. Do not use it in a production deployment.
  * Running on http://localhost:5000
 Press CTRL+C to quit
 ```
+
+## Azure Identity client library for Python - version 1.13.0
+
+Authenticate during local development
+```
+pip install azure-identity
+```
+
+https://learn.microsoft.com/en-us/python/api/overview/azure/identity-readme?view=azure-python
