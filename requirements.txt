@@ -1,5 +1,6 @@
 azure-core==1.27.0
 azure-identity==1.13.0
+azure-storage-blob==12.16.0
 blinker==1.6.2
 certifi==2023.5.7
 cffi==1.15.1
@@ -9,6 +10,7 @@ colorama==0.4.6
 cryptography==41.0.1
 Flask==2.3.2
 idna==3.4
+isodate==0.6.1
 itsdangerous==2.1.2
 Jinja2==3.1.2
 MarkupSafe==2.1.3

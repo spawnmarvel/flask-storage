@@ -1,11 +1,11 @@
 from flask import Flask, render_template
-
+import container_worker as cn
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    data = get_storage()
-    return render_template("index.html", data=data)
+    data_dict = get_storage()
+    return render_template("index.html", data=data_dict)
 
 @app.route("/about")
 def about():
@@ -13,7 +13,9 @@ def about():
 
 
 def get_storage():
-    return "Storage 0010"
+    cont_worker = cn.ContainerWorker()
+    data_dict = cont_worker.get_container()
+    return data_dict
 
 if __name__ == '__main__':
     fs_host = 'localhost'
