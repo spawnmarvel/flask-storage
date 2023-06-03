@@ -1,8 +1,12 @@
 # Azure storage monitoring and more with Flask and Azure SDK
 
-## Flask
+## Flask Docs
 
 https://tedboy.github.io/flask/index.html
+
+## Flask tutorialspoint
+
+https://www.tutorialspoint.com/flask/flask_application.htm
 
 ## Microsoft Python SDK
 
@@ -78,3 +82,14 @@ Must be bicep and infrastructure deploy and code deploy
 * Use more Bicep for IAC
 * Test web app or container.
 
+
+## Start the app for now
+
+```
+(venv) c:\giti2023\flask-storage>python app\run.py
+ * Serving Flask app 'run'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://localhost:5000
+Press CTRL+C to quit
+```
