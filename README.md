@@ -32,12 +32,14 @@ virtualenv --version
 cd flask-storage
 flask-storage>virtualenv venv
 
-// virtualenv venv will create a folder in the current directory which will contain the Python executable files, and a copy of the pip library which you can use to install other packages. 
-// The name of the virtual environment (in this case, it was venv) can be anything; omitting the name will place the files in the current directory instead.
+// virtualenv venv will create a folder in the current directory which will contain the Python executable files, 
+// and a copy of the pip library which you can use to install other packages. 
+// The name of the virtual environment (in this case, it was venv) can be anything; 
+// omitting the name will place the files in the current directory instead.
 
 
 ```
-Note
+Note!
 * ‘venv’ is the general convention used globally. As it is readily available in ignore files (eg: .gitignore’).
 * Select Python for gitignore when you make the repository.
 
