@@ -50,7 +50,7 @@ c:\giti2023\flask-storage>venv\Scripts\activate
 (venv) c:\giti2023\flask-storage>pip install flask
 
 ```
-![Install lib ](https://github.com/spawnmarvel/azure-data-engineering/blob/main/images/install_lib.jpg)
+![Install lib ](https://github.com/spawnmarvel/flask-storage/blob/main/images/install_lib.jpg)
 ```
 
 // View lib's installed
