@@ -14,8 +14,6 @@ https://learn.microsoft.com/en-us/python/api/overview/azure/storage?view=azure-p
 * Queues
 * Tables
 
-## Azure Web APP or container?
-
 
 ## Lower level: virtualenv
 
@@ -69,3 +67,7 @@ c:\giti2023\flask-storage>venv\Scripts\activate
 ## Dependencies
 
 view requirements.txt
+
+## Azure Web APP or container?
+
+Must be bicep and infrastructure deploy and code deploy
