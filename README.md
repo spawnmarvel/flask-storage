@@ -65,3 +65,7 @@ c:\giti2023\flask-storage>venv\Scripts\activate
 (venv) c:\giti2023\flask-storage>deactivate
 
 ```
+
+## Dependencies
+
+view requirements.txt
