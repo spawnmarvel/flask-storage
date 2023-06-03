@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block title %}FSMA{% endblock %} {% block body %}
+
+<div class="container">
+    <h1>Home</h1>
+    <p>A flask app for minitoring Azure storage account services</p>
+    <ul>
+        <li>Container</li>
+        <li>File share</li>
+        <li>Queue</li>
+        <li>Table</li>
+    </ul>
+    <br>
+    <p>Storage: {{ data }}</p>
+    
+</div>
+
+{% endblock %}

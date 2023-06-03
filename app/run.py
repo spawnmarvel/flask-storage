@@ -1,10 +1,19 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
-def entry():
-    return 'Entry site'
+def index():
+    data = get_storage()
+    return render_template("index.html", data=data)
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+
+def get_storage():
+    return "Storage 0010"
 
 if __name__ == '__main__':
     fs_host = 'localhost'
