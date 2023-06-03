@@ -71,3 +71,10 @@ view requirements.txt
 ## Azure Web APP or container?
 
 Must be bicep and infrastructure deploy and code deploy
+
+## Reason
+
+* Have fun with Python and Azure storage
+* Use more Bicep for IAC
+* Test web app or container.
+
