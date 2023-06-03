@@ -101,4 +101,5 @@ Authenticate during local development
 pip install azure-identity
 ```
 
+![Install Azure account ](https://github.com/spawnmarvel/flask-storage/blob/main/images/install_az_account.jpg)
 https://learn.microsoft.com/en-us/python/api/overview/azure/identity-readme?view=azure-python
