@@ -38,4 +38,28 @@ flask-storage>virtualenv venv
 
 ```
 Note
-‘venv’ is the general convention used globally. As it is readily available in ignore files (eg: .gitignore’)
+* ‘venv’ is the general convention used globally. As it is readily available in ignore files (eg: .gitignore’).
+* Select Python for gitignore when you make the repository.
+
+```
+// To begin using the virtual environment, it needs to be activated:
+// Could be different commands
+c:\giti2023\flask-storage>venv\Scripts\activate
+
+// Install a lib
+(venv) c:\giti2023\flask-storage>pip install flask
+
+```
+![Install lib ](https://github.com/spawnmarvel/azure-data-engineering/blob/main/images/install_lib.jpg)
+```
+
+// View lib's installed
+(venv) c:\giti2023\flask-storage>pip freeze
+
+// Export lib's to requirements file
+(venv) c:\giti2023\flask-storage>pip freeze >requirements.txt
+
+// If you are done working in the virtual environment for the moment, you can deactivate it
+(venv) c:\giti2023\flask-storage>deactivate
+
+```
