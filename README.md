@@ -123,4 +123,6 @@ c:\giti2023\flask-storage>venv\Scripts\activate
 
 ```
 
+![Run local ](https://github.com/spawnmarvel/flask-storage/blob/main/images/run_local.jpg)
+
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial
