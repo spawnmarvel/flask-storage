@@ -76,6 +76,9 @@ view requirements.txt
 
 Must be bicep and infrastructure deploy and code deploy
 
+* Python/Flask Tutorial for Visual Studio Code
+https://github.com/Microsoft/python-sample-vscode-flask-tutorial
+
 ## Reason
 
 * Have fun with Python and Azure storage
@@ -83,7 +86,7 @@ Must be bicep and infrastructure deploy and code deploy
 * Test web app or container.
 
 
-## Start the app for now
+~~## Start the app for now~~
 
 ```
 (venv) c:\giti2023\flask-storage>python app\run.py
@@ -93,6 +96,22 @@ WARNING: This is a development server. Do not use it in a production deployment.
  * Running on http://localhost:5000
 Press CTRL+C to quit
 ```
+# Start the app locally but build for Azure Web App
+
+```
+# cmd
+
+c:\giti2023\flask-storage>venv\Scripts\activate
+(venv) c:\giti2023\flask-storage>cd flaskstazmonitor
+(venv) c:\giti2023\flask-storage\flaskstazmonitor>set FLASK_APP=webapp
+(venv) c:\giti2023\flask-storage\flaskstazmonitor>set FLASK_ENV=development
+(venv) c:\giti2023\flask-storage\flaskstazmonitor>flask run
+
+
+```
+
+https://github.com/Microsoft/python-sample-vscode-flask-tutorial
+
 
 ## Azure Identity client library for Python - version 1.13.0
 

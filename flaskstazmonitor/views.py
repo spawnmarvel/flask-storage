@@ -1,8 +1,6 @@
 from flask import Flask, render_template
-import container_worker as cn
-app = Flask(__name__)
-
-# a comment
+from . import container_worker as cn
+from . import app
 
 @app.route('/')
 def index():
@@ -19,9 +17,13 @@ def get_storage():
     data_dict = cont_worker.get_container()
     return data_dict
 
-if __name__ == '__main__':
-    fs_host = 'localhost'
-    fs_port = 5000
-    fs_debug = True
 
-    app.run(host=fs_host, port=fs_port, debug=fs_debug)
+# https://medium.com/reactorlabs/quickly-get-started-with-flask-58201a1f1f61
+
+
+## Cannot be used for Azure Web app
+#if __name__ == '__main__':
+#    fs_host = 'localhost'
+#    fs_port = 5000
+#    fs_debug = True
+#    app.run(host=fs_host, port=fs_port, debug=fs_debug)

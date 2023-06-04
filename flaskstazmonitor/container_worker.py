@@ -8,6 +8,7 @@ from azure.identity import DefaultAzureCredential
 
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 import json
+import os
 
 class ContainerWorker():
     def __init__(self):
@@ -15,8 +16,10 @@ class ContainerWorker():
         self.account = self.config["storageaccountname"]
 
     def read_config(self):
+        data_config = None
         try:
-            with open("app\config.json", "r") as jsonfile:
+            my_local_file = os.path.join(os.path.dirname(__file__), "config.json")
+            with open(my_local_file, "r") as jsonfile:
                 data_config = json.load(jsonfile)
                 print(data_config)
         except Exception as ex:
