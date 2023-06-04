@@ -72,12 +72,25 @@ c:\giti2023\flask-storage>venv\Scripts\activate
 
 view requirements.txt
 
+Azure Identity client library for Python - version 1.13.0
+
+Authenticate during local development
+```
+pip install azure-identity
+```
+
+![Install Azure account ](https://github.com/spawnmarvel/flask-storage/blob/main/images/install_az_account.jpg)
+https://learn.microsoft.com/en-us/python/api/overview/azure/identity-readme?view=azure-python
+
 ## Azure Web APP or container?
 
 Must be bicep and infrastructure deploy and code deploy
 
 * Python/Flask Tutorial for Visual Studio Code
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial
+
+* Use CI/CD to deploy a Python web app to Azure App Service on Linux
+https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops
 
 ## Reason
 
@@ -96,7 +109,7 @@ WARNING: This is a development server. Do not use it in a production deployment.
  * Running on http://localhost:5000
 Press CTRL+C to quit
 ```
-# Start the app locally but build for Azure Web App
+## Start the app locally and build for Azure Web App
 
 ```
 # cmd
@@ -111,14 +124,3 @@ c:\giti2023\flask-storage>venv\Scripts\activate
 ```
 
 https://github.com/Microsoft/python-sample-vscode-flask-tutorial
-
-
-## Azure Identity client library for Python - version 1.13.0
-
-Authenticate during local development
-```
-pip install azure-identity
-```
-
-![Install Azure account ](https://github.com/spawnmarvel/flask-storage/blob/main/images/install_az_account.jpg)
-https://learn.microsoft.com/en-us/python/api/overview/azure/identity-readme?view=azure-python
