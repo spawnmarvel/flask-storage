@@ -14,6 +14,7 @@ class ContainerWorker():
     def __init__(self):
         self.config = self.read_config()
         self.account = self.config["storageaccountname"]
+        self.connect()
 
     def read_config(self):
         data_config = None
@@ -26,10 +27,18 @@ class ContainerWorker():
             print(ex)
         return data_config
 
+    def connect(self):
+        self.default_credential = None
+        try:
+            self.account_url = "https://" + self.account +".blob.core.windows.net"
+            self.default_credential = DefaultAzureCredential()
+        except Exception as ex:
+            print(ex)
+        return self.default_credential
+            
+
     def get_container(self):
         data_dict = {"name": self.account}
-        self.account_url = "https://" + self.account +".blob.core.windows.net"
-        self.default_credential = DefaultAzureCredential()
         data = []
         try:
             blob_service_client = BlobServiceClient(account_url=self.account_url, credential=self.default_credential)
