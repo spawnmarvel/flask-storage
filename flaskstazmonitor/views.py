@@ -4,13 +4,16 @@ from . import app
 
 @app.route('/')
 def index():
-    data_dict = get_storage()
-    return render_template("index.html", data=data_dict)
+    return render_template("index.html")
 
 @app.route("/about")
 def about():
     return render_template("about.html")
 
+@app.route('/storage')
+def storage():
+    data_dict = get_storage()
+    return render_template("storage.html", data=data_dict)
 
 def get_storage():
     cont_worker = cn.ContainerWorker()
