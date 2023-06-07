@@ -10,12 +10,12 @@ def index():
 def about():
     return render_template("about.html")
 
-@app.route('/storage')
-def storage():
-    data_dict = get_storage()
-    return render_template("storage.html", data=data_dict)
+@app.route('/container')
+def container():
+    data_dict = get_container()
+    return render_template("container.html", data=data_dict)
 
-def get_storage():
+def get_container():
     cont_worker = cn.ContainerWorker()
     data_dict = cont_worker.get_container()
     return data_dict

@@ -1,12 +1,12 @@
 {% extends "base.html" %} {% block title %}FSMA{% endblock %} {% block body %}
 
 <div class="container">
-    <h1>Storage</h1>
-    <p>Azure Storage</p>
+    <h1>Container</h1>
+    <p>Azure Container</p>
     <br>
-    <p>Storage: {{ data }}</p>
+    <p>Container: {{ data }}</p>
     
-    <p>Data:</p>
+    <p>Container:</p>
     {% for key, value in data.items() %}
     <p>{{ value }}</p>
     <p></p>
